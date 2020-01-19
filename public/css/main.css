@@ -44,7 +44,7 @@ p.logo {
   text-decoration: none;
 }
 nav.navbar {
-  background: url(images/skateboard-bg.png);
+  background: url(../images/skateboard-bg.png);
   background-size: 100em;
   background: #F7F7F7;
 }
@@ -95,7 +95,7 @@ nav.navbar {
 /* --------------- Hero ---------------- */
 .hero {
   min-height: calc(100vh - 60px);
-  background: url(images/sb-bg.jpg) center/cover no-repeat;
+  background: url(../images/sb-bg.jpg) center/cover no-repeat;
   background-color: #222;
   display: flex;
   align-items: center;

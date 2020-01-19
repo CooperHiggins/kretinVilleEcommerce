@@ -8,14 +8,14 @@
     <!-- FONT AWESOME CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <!-- jQuery -->
 <script rel="no-referer" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
                 $(document).ready(function(){
                 // Add smooth scrolling to all links
-                $("a#videos-center").on('click', function(event) {
+                $("a#posts-center").on('click', function(event) {
 
                     // Make sure this.hash has a value before overriding default behavior
                     if (this.hash !== "") {
@@ -53,8 +53,8 @@
             <a href="login.html" class="login-btn">Admin Login</a>
         </div> -->
 
-        <a href="index.html">
-            <img class="img-fluid" id="logo" src="images/kretinville-skateboards.jpeg" />
+        <a href="../index.html">
+            <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.jpeg" />
             <p class="logo">Click to go home</p>
         </a>
         <div class="">
@@ -77,32 +77,28 @@
     
     <!-- end nav -->
 
+<!-- end nav -->
+
 <!-- hero -->
 <header class="hero">
     <div class="banner">
-            <h1 class="banner-title">KretinVille Skate Videos</h1>
-
-            <a href="#videos-center" id="videos-center"><button class="banner-btn">Skate Videos</button></a>
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" id="posts-center"><button class="banner-btn">See Posts</button></a>
     </div>
 </header>
 <!-- hero -->
-<section id="videos-center">
-    <div class="section-title">
-        <h2>Skateboard Videos</h2>
-    </div>
 
-    <div class="videos-center">
-            
-    </div>
-</section>
+<div class="posts-center">
+        
+</div>
 
 <!-- start footer  -->
 <footer class="">
-    <p class="text-center">&copy; Kretinville Skateboards</p>
+    <p class="text-center">&copy; KretinVille Skateboards</p>
 </footer>
 <!-- end footer  -->
 
 
-<script src="videos.js"></script>
+<script src="../js/blog.js"></script>
 </body>
 </html>

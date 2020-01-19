@@ -8,10 +8,11 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!-- STORE CSS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- <link rel="stylesheet" href="store.css"> -->
-    
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <!-- jQuery -->
 <script rel="no-referer" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -61,13 +62,13 @@
             <p class="logo">Click to go home</p>
         </a>
         <div class="">
-            <a href="blog.html" class="login-btn">Blog</a>
+            <a href="html/blog.html" class="login-btn">Blog</a>
         </div>
         <div class="">
-            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+            <a href="html/skateboards-catalog.html" class="login-btn">Catalog</a>
         </div>
         <div class="">
-            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+            <a href="html/skateboard-videos.html" class="login-btn">Videos</a>
         </div>
         <div class="cart-btn">
             <span class="nav-icon">
@@ -140,40 +141,12 @@
             <div class="">
             <h3>Cart total : $<span class="cart-total">0</span></h3>
             <button class="clear-cart banner-btn">Clear Cart</button>
-             </div>
-
-            
+             </div>            
             <br>
-
-            <form id="payment-form">
-                <button type="submit">payments</button>
-            </form>
-
-            <br>
-            
-            <div class="">
-                <script src="https://checkout.stripe.com/checkout.js" 
-                class="stripe-button" 
-                data-key="pk_live_08nfNJQ7HfTIOoCYbHcEk0Ay00Tzs0JfVm
-                " data-amount=cartTotal
-                data-allow-remember-me="true" 
-                data-shipping-address="true" 
-                data-billing-address="true" 
-                data-label="Proceed to payment details"  
-                data-name=cart 
-                data-description=cart
-                data-image="images/kretinville-skateboards.jpeg"
-                data-locale="auto">
-                </script>
-            </div>
-
-            <br>
-            
-            <script src="https://checkout.stripe.com/checkout.js"></script>
-            <script src="https://js.stripe.com/v3/"></script>
-            <button class="stripe-button" 
-            data-key="pk_live_08nfNJQ7HfTIOoCYbHcEk0Ay00Tzs0JfVm
-            " data-amount=cartTotal
+            <button class="checkout-cart banner-btn">Checkout</button>
+             </div>            
+           <!-- <button class="stripe-button" 
+            data-key="pk_live_08nfNJQ7HfTIOoCYbHcEk0Ay00Tzs0JfVm" data-amount=cartTotal
             data-allow-remember-me="true" 
             data-shipping-address="true" 
             data-billing-address="true" 
@@ -182,25 +155,8 @@
             data-description=cart
             data-image="images/kretinville-skateboards.jpeg"
             data-locale="auto"></button>
+            -->
             <br>
-
-            <form action="/charge" method="post" id="payment-form">
-                <div class="form-row">
-                  <label for="card-element">
-                    Credit or debit card
-                  </label>
-                  <div id="card-element">
-                    <!-- A Stripe Element will be inserted here. -->
-                  </div>
-              
-                  <!-- Used to display Element errors. -->
-                  <div id="card-errors" role="alert"></div>
-                </div>
-              
-                <button>Submit Payment</button>
-              </form>
-            
-
         </div>
     </div>
 </div>
@@ -212,16 +168,11 @@
 </footer>
 <!-- end footer  -->
 
-<script src="app.js"></script>
-<script src="https://js.stripe.com/v3/"></script>
-<script src="https://checkout.stripe.com/checkout.js" defer></script>
+<script src="js/app.js"></script>
+<!-- <script src="https://checkout.stripe.com/checkout.js" defer></script>-->
 <!-- <script src="drop-down.js"></script> -->
 </body>
 
 </html>
-
-
-
-
 </body>
 </html>

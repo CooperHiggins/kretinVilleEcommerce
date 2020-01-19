@@ -5,7 +5,7 @@
       "fields": {
         "title": "First Night On Tour",
         "p": "The first stop on the tour was Austin texas, I needed to get back home to start filming my first video part and I wanted to skate some of the local spots I allready knew there beacuase I knew how good the pictures would look.",
-        "image": { "fields": { "file": { "url": "./images/cheap-skateboards.png" } } }
+        "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
       }
     },
     {
@@ -13,7 +13,7 @@
         "fields": {
           "title": "First Blog Post",
           "p": "paragraph",
-          "image": { "fields": { "file": { "url": "./images/cheap-skateboards.png" } } }
+          "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
         }
       },
       {
@@ -21,7 +21,7 @@
         "fields": {
           "title": "First Blog Post",
           "p": "paragraph",
-          "image": { "fields": { "file": { "url": "./images/cheap-skateboards.png" } } }
+          "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
         }
       },
       {
@@ -29,7 +29,7 @@
         "fields": {
           "title": "First Blog Post",
           "p": "paragraph",
-          "image": { "fields": { "file": { "url": "./images/cheap-skateboards.png" } } }
+          "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
         }
       },
       {
@@ -37,7 +37,7 @@
         "fields": {
           "title": "First Blog Post",
           "p": "paragraph",
-          "image": { "fields": { "file": { "url": "./images/cheap-skateboards.png" } } }
+          "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
         }
       },
       {
@@ -45,7 +45,7 @@
         "fields": {
           "title": "First Blog Post",
           "p": "paragraph",
-          "image": { "fields": { "file": { "url": "./images/cheap-skateboards.png" } } }
+          "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
         }
       },
       {
@@ -53,7 +53,7 @@
         "fields": {
           "title": "First Blog Post",
           "p": "paragraph",
-          "image": { "fields": { "file": { "url": "./images/cheap-skateboards.png" } } }
+          "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
         }
       },
       {
@@ -61,7 +61,7 @@
         "fields": {
           "title": "First Blog Post",
           "p": "paragraph",
-          "image": { "fields": { "file": { "url": "./images/cheap-skateboards.png" } } }
+          "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
         }
       }
   ]

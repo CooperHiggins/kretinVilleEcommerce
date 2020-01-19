@@ -13,7 +13,7 @@
         "fields": {
           "title": "First Blog Post",
           "p": "paragraph",
-          "image": { "fields": { "file": { "url": "./images/cheap-skateboards.png" } } }
+          "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
         }
       }
   ]
