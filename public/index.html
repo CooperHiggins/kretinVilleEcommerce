@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kretin Ville Skate</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- STORE CSS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <link rel="stylesheet" href="store.css"> -->
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<!-- jQuery -->
+<script rel="no-referer" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+                $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a#products-center").on('click', function(event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 700, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                    } // End if
+                });
+                });
+    </script>
+    
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="index.html">
+            <img class="img-fluid" id="logo" src="images/kretinville-skateboards.jpeg" />
+            <p class="logo">Click to go home</p>
+        </a>
+        <div class="">
+            <a href="html/blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="html/skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="html/skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+        <h1 class="banner-title">Skateboards / Cheap Skate Decks</h1>
+        <a href="#products-center" id="products-center"><button class="banner-btn">See Product</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<!-- products -->
+<section id="products-center">
+    <div class="section-title">
+        <h2>Our Skateboards for sale</h2>
+    </div>
+    
+    <div class="products-center">
+    <!-- single product -->
+        <!-- <article class="product">
+            <div class="img-container">
+                <img src="./images/product-1.jpeg" alt="product" class="product-img">
+                <button class="bag-btn" data-id="1">
+                    <i class="fa fa-shopping-cart"></i>
+                    add to bag
+                </button>
+            </div>
+            <h3>Queen Bed</h3>
+            <h4>16</h4>
+        </article> -->
+    <!-- single product end -->
+    </div>
+
+</section>
+
+<!-- cart overlay -->
+<div class="cart-overlay">
+    <div class="cart">
+        <span class="close-cart">
+            <i class="fa fa-window-close"></i>
+        </span>
+        <h2>Your Cart</h2>
+        <div class="cart-content">
+            <!-- cart item -->
+            <!-- <div class="cart-item">
+                <img src="./images/product-1.jpeg" alt="cart-image">
+                <div>
+                    <h4>Queen bed</h4>
+                    <h5>$9.00</h5>
+                    <span class="remove-item">remove</span>
+                </div>
+                <div>
+                    <i class="fa fa-chevron-up"></i>
+                    <p class="item-amount">1</p>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+            </div> -->
+            <!-- end of cart item -->
+        </div>
+        <div class="cart-footer">
+            <div class="">
+            <h3>Cart total : $<span class="cart-total">0</span></h3>
+            <button class="clear-cart banner-btn">Clear Cart</button>
+             </div>            
+            <br>
+            <button class="checkout-cart banner-btn">Checkout</button>
+             </div>            
+           <!-- <button class="stripe-button" 
+            data-key="pk_live_08nfNJQ7HfTIOoCYbHcEk0Ay00Tzs0JfVm" data-amount=cartTotal
+            data-allow-remember-me="true" 
+            data-shipping-address="true" 
+            data-billing-address="true" 
+            data-label="Proceed to payment details"  
+            data-name=cart 
+            data-description=cart
+            data-image="images/kretinville-skateboards.jpeg"
+            data-locale="auto"></button>
+            -->
+            <br>
+        </div>
+    </div>
+</div>
+<!-- end cart overlay -->
+
+<!-- start footer  -->
+<footer>
+    <p class="text-center">&copy; Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+
+<script src="js/app.js"></script>
+<!-- <script src="https://checkout.stripe.com/checkout.js" defer></script>-->
+<!-- <script src="drop-down.js"></script> -->
+</body>
+
+</html>
+</body>
+</html>
