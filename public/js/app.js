@@ -204,9 +204,9 @@ class UI {
       });
   }
   stripe(sessionId) {
-    var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
-    async () => {
-      await stripe.redirectToCheckout({
+    var stripe = Stripe('pk_test_aoH94nr3uihcLLqiRyJmKbtH00xHTMWd2F');
+    (async () => {
+      const { error } = await stripe.redirectToCheckout({
         // Make the id field from the Checkout Session creation API response
         // available to this file, so you can provide it as parameter here
         // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
@@ -215,7 +215,7 @@ class UI {
       if (error) {
         console.log(error.message);
       }
-    };
+    })();
   }
   removeItem(id) {
     cart = cart.filter(item => item.id !== id);

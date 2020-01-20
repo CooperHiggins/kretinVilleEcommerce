@@ -5,11 +5,13 @@ dotenv.config();
 
 module.exports = class StripeController {
   constructor() {
+    let key;
     if (process.env.NODE_ENV === 'production') {
-      this.stripe = Stripe(process.env.STRIPE_SK_LIVE_KEY);
+      key = process.env.STRIPE_SK_LIVE_KEY;
     } else {
-      this.stripe = Stripe(process.env.STRIPE_SK_TEST_KEY);
+      key = process.env.STRIPE_SK_TEST_KEY;
     }
+    this.stripe = Stripe(key);
   }
 
   async checkoutOnetime(req, res, next) {
@@ -24,9 +26,9 @@ module.exports = class StripeController {
         payment_method_types: ['card'],
         line_items,
         //success_url: fullUrl + 'ht/success',
-        success_url: 'facebook.com',
+        success_url: 'https://facebook.com',
         //cancel_url: fullUrl + '/cancel'
-        cancel_url: 'facebook.com'
+        cancel_url: 'https://facebook.com'
       });
       res.json({ session });
     } catch (err) {
