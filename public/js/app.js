@@ -2,7 +2,7 @@
 const cartBtn = document.querySelector('.cart-btn');
 const closeCartBtn = document.querySelector('.close-cart');
 const clearCartBtn = document.querySelector('.clear-cart');
-const checkoutBtn = document.querySelector('.clear-cart');
+const checkoutBtn = document.querySelector('.checkout-cart');
 const cartDOM = document.querySelector('.cart');
 const cartOverlay = document.querySelector('.cart-overlay');
 const cartItems = document.querySelector('.cart-items');
@@ -181,9 +181,42 @@ class UI {
     }
     this.hideCart();
   }
-  checkout(){
-
-  },
+  checkout() {
+    let item;
+    const data = {};
+    data.line_items = cart.map(cartObj => {
+      item = {};
+      item.amount = Math.round(cartObj.price * 100);
+      item.images = [cartObj.image];
+      item.name = cartObj.title;
+      item.quantity = cartObj.amount;
+      item.currency = 'usd';
+      return item;
+    });
+    axios
+      .post('/stripe/checkout-onetime', data)
+      .then(res => {
+        const { session } = res.data;
+        this.stripe(session.id);
+      })
+      .catch(err => {
+        console.log('err', err);
+      });
+  }
+  stripe(sessionId) {
+    var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+    async () => {
+      await stripe.redirectToCheckout({
+        // Make the id field from the Checkout Session creation API response
+        // available to this file, so you can provide it as parameter here
+        // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
+        sessionId
+      });
+      if (error) {
+        console.log(error.message);
+      }
+    };
+  }
   removeItem(id) {
     cart = cart.filter(item => item.id !== id);
     this.setCartValues(cart);

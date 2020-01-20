@@ -1,33 +1,32 @@
 const dotenv = require('dotenv');
-const stripe = require('stripe');
+const Stripe = require('stripe');
 
 dotenv.config();
+
 module.exports = class StripeController {
   constructor() {
     if (process.env.NODE_ENV === 'production') {
-      this.stripe = stripe(process.env.STRIPE_LIVE_SK_KEY);
+      this.stripe = Stripe(process.env.STRIPE_SK_LIVE_KEY);
     } else {
-      this.stripe = stripe(process.env.STRIPE_TEST_SK_KEY);
+      this.stripe = Stripe(process.env.STRIPE_SK_TEST_KEY);
     }
   }
 
   async checkoutOnetime(req, res, next) {
+    const { line_items } = req.body;
+
+    if (!(line_items && Array.isArray(line_items) && line_items.length > 0)) {
+      return res.status(400).json({ message: 'Line items is required' });
+    }
+    const fullUrl = `${req.protocol}://${req.get('host')}`;
     try {
-      const session = await stripe.checkout.sessions.create({
-        customer: 'cus_123',
+      const session = await this.stripe.checkout.sessions.create({
         payment_method_types: ['card'],
-        line_items: [
-          {
-            name: 'T-shirt',
-            description: 'Comfortable cotton t-shirt',
-            images: ['https://example.com/t-shirt.png'],
-            amount: 500,
-            currency: 'usd',
-            quantity: 1
-          }
-        ],
-        success_url: 'https://example.com/success',
-        cancel_url: 'https://example.com/cancel'
+        line_items,
+        //success_url: fullUrl + 'ht/success',
+        success_url: 'facebook.com',
+        //cancel_url: fullUrl + '/cancel'
+        cancel_url: 'facebook.com'
       });
       res.json({ session });
     } catch (err) {
