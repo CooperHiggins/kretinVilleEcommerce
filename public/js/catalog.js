@@ -5,7 +5,7 @@ const postsDOM = document.querySelector('.catalog-center');
 class Posts {
   async getPosts() {
     try {
-      let result = await fetch('../js/json/posts.json');
+      let result = await fetch('../js/json/catalog.json');
       let data = await result.json();
       let posts = data.items;
       posts = posts.map(item => {
