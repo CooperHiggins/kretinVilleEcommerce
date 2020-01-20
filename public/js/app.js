@@ -108,7 +108,7 @@ class UI {
         <i class="fa fa-chevron-up" data-id=${item.id}></i>
         <p class="item-amount">${item.amount}</p>
         <i class="fa fa-chevron-down" data-id=${item.id}></i>
-        
+
     </div>
 </div>`;
     cartContent.appendChild(div);
