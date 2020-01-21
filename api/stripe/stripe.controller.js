@@ -24,6 +24,7 @@ module.exports = class StripeController {
     try {
       const session = await this.stripe.checkout.sessions.create({
         payment_method_types: ['card'],
+        //require shipping info during checkout
         billing_address_collection:"required",
         line_items,
         //success_url: fullUrl + 'ht/success',
