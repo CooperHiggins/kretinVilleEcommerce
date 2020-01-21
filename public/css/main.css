@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @import url('https://fonts.googleapis.com/css?family=Jolly+Lodger&display=swap');
+
+@font-face {
+  font-family: 'Ghastly Panic' cursive;
+  src: url(ghastly-panic.ttf);
+}
 :root {
   --primaryColor: #b90600;
   --mainWhite: #fff;
@@ -19,29 +24,39 @@
 body {
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: 'Jolly Lodger', cursive;
+  font-family: 'Ghastly Panic', cursive;
+}
+p.logo {
+  font-family: 'Ghastly Panic';
+  color: #B90600;
+  font-size: 5em;
+  text-decoration: underline;
+  text-decoration-color: black;
 }
 /* --------------- Navbar ---------------- */
 span.nav-icon {
   font-family: 'Jolly Lodger', cursive;
 }
 a.login-btn {
-  font-family: 'Jolly Lodger', cursive;
-  font-size: 2rem;
+  font-family: 'Ghastly Panic', cursive;
+  font-size: 3rem;
+  font-weight: bolder;
   margin: .5rem;
   text-decoration: none;
   color: black;
 }
 a.login-btn:hover {
-  font-family: 'Jolly Lodger', cursive;
-  font-size: 2rem;
+  font-family: 'Ghastly Panic', cursive;
   text-decoration: underline;
+  text-decoration-style: wavy;
 }
 p.logo {
-  font-size: 12px;
+  font-size: 2em;
   line-height: 0px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: black;
 }
 nav.navbar {
   background: url(../images/skateboard-bg.png);
@@ -90,6 +105,8 @@ nav.navbar {
   padding: 0 5px;
   border-radius: 30%;
   color: var(--mainWhite);
+  padding: 3px;
+  font-weight: bolder;
 }
 /* --------------- End of Navbar ---------------- */
 /* --------------- Hero ---------------- */
@@ -108,7 +125,7 @@ nav.navbar {
   padding: 1rem 1rem;
 }
 .banner-title {
-  font-size: 3.4rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 3rem;
@@ -136,8 +153,8 @@ nav.navbar {
 }
 .section-title h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   padding: 1em;
@@ -211,10 +228,11 @@ nav.navbar {
 
 .product h3 {
   text-transform: capitalize;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   margin-top: 1rem;
   letter-spacing: var(--mainSpacing);
   text-align: center;
+  font-weight: bolder;
 }
 
 .product h4 {
@@ -279,6 +297,10 @@ footer {
   text-align: center;
   font-size: 2em;
 }
+span.copyright {
+  font-family: fantasy;
+}
+/* footer */
 @media screen and (min-width: 768px) {
   .cart {
     width: 30vw;
@@ -300,6 +322,14 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     /* grid-column-gap: 1.5rem; */
     /* grid-row-gap: 2rem; */
+  }
+  p.logo {
+    font-size: 4em;
+    line-height: 0px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: black;
   }
 }
 
