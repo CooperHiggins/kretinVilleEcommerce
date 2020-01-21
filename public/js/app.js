@@ -34,7 +34,6 @@ class Products {
       // let data = await result.json();
       // let products = data.items;
       
-
       let products = contentful.items;
       products = products.map(item => {
         const { title, price } = item.fields;

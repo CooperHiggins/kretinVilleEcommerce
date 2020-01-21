@@ -12,7 +12,7 @@ class Posts {
   async getPosts() {
     try {
       let contentful = await client.getEntries({
-        content_type: "kretinVilleCatalog"
+        content_type: "kretinVilleKatalog"
       })
       // let result = await fetch('../js/json/catalog.json');
       // let data = await result.json();
@@ -22,7 +22,8 @@ class Posts {
         const { title, p } = item.fields;
         const { id } = item.sys;
         const image = item.fields.image.fields.file.url;
-        return { title, p, id, image };
+        const rightimage = item.fields.rightimage.fields.file.url;
+        return { title, p, id, image, rightimage };
       });
       return posts;
     } catch (error) {
@@ -44,6 +45,11 @@ class UI {
         <article class="catalog" style="padding-top: 1em; padding-bottom: 1em;">
           <div class="catalog-container">
               <img src=${posts.image} class="catalog-img"> 
+          </div>
+      </article>
+      <article class="catalog" style="padding-top: 1em; padding-bottom: 1em;">
+          <div class="catalog-container">
+              <img src=${posts.rightimage} class="catalog-img"> 
           </div>
       </article>
         `;

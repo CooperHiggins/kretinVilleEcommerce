@@ -1,9 +1,9 @@
-const client = contentful.createClient({
-  // This is the space ID. A space is like a project folder in Contentful terms
-  space: "x2kh2pfmdwmn",
-  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-  accessToken: "fqLGxIgDojK9HVDW0EV0TTgM0Bscx_qGgmc9IlCMgos"
-});
+// const client = contentful.createClient({
+//   // This is the space ID. A space is like a project folder in Contentful terms
+//   space: "x2kh2pfmdwmn",
+//   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+//   accessToken: "fqLGxIgDojK9HVDW0EV0TTgM0Bscx_qGgmc9IlCMgos"
+// });
 // variables
 const videosDOM = document.querySelector('.videos-center');
 
@@ -11,21 +11,21 @@ const videosDOM = document.querySelector('.videos-center');
 class Videos {
   async getVideos() {
     try {
-      
-      let contentful = await client.getEntries({
-        content_type: "kretinVilleVideos"
-      })
-      // let result = await fetch('..js/json/videos.json');
-      // let data = await result.json();
-      // let videos = data.items;
-      let videos = contentful.items;
-      videos = videos.map(item => {
-        const { title, p } = item.fields;
-        const { id } = item.sys;
-        const image = item.fields.image.fields.file.url;
-        return { title, p, id, image };
-      });
-      return videos;
+
+      // let contentful = await client.getEntries({
+      //   content_type: "kretinVilleVideos"
+      // })
+      let result = await fetch('..js/json/videos.json');
+      let data = await result.json(); 
+        let videos = data.items;
+        // let videos = contentful.items;
+        videos = videos.map(item =>{
+          const {title,p} = item.fields;
+          const {id} = item.sys
+          const image = item.fields.image.fields.file.url;
+          return {title,p,id,image}
+        })
+        return videos;
     } catch (error) {
       console.log(error);
     }

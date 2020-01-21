@@ -13,7 +13,7 @@ class Posts {
     try {
       
       let contentful = await client.getEntries({
-        content_type: "kretinVilleBlogPost"
+        content_type: "kretinVilleBlogPosts"
       })
       // console.log(contentful)
       // let result = await fetch('../js/json/posts.json');
