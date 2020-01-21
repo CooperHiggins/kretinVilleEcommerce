@@ -13,35 +13,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://js.stripe.com/v3/"></script>
 </head>
-<!-- jQuery -->
-<script rel="no-referer" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>
-                $(document).ready(function(){
-                // Add smooth scrolling to all links
-                $("a#products-center").on('click', function(event) {
 
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 700, function(){
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                    } // End if
-                });
-                });
-    </script>
-    
 <body>
 
 <!-- NAVBAR -->
@@ -83,7 +55,7 @@
 <header class="hero">
     <div class="banner">
         <h1 class="banner-title">Skateboards / Cheap Skate Decks</h1>
-        <a href="#products-center" id="products-center"><button class="banner-btn">See Product</button></a>
+        <a href="#products-center" class="scroll" id="products-center"><button class="banner-btn">See Product</button></a>
     </div>
 </header>
 <!-- hero -->
@@ -170,8 +142,40 @@
 <script src="js/app.js"></script>
 <!-- <script src="https://checkout.stripe.com/checkout.js" defer></script>-->
 <!-- <script src="drop-down.js"></script> -->
+
+<script>
+    // Vanilla JavaScript Scroll to Anchor
+    // @ https://perishablepress.com/vanilla-javascript-scroll-anchor/
+
+    (function() {
+      scrollTo();
+    })();
+
+    function scrollTo() {
+      const links = document.querySelectorAll('.scroll');
+      links.forEach(each => (each.onclick = scrollAnchors));
+    }
+
+    function scrollAnchors(e, respond = null) {
+      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+      e.preventDefault();
+      var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+      const targetAnchor = document.querySelector(targetID);
+      if (!targetAnchor) return;
+      const originalTop = distanceToTop(targetAnchor);
+      window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+      const checkIfDone = setInterval(function() {
+        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+        if (distanceToTop(targetAnchor) === 0 || atBottom) {
+          targetAnchor.tabIndex = '-1';
+          targetAnchor.focus();
+          window.history.pushState('', '', targetID);
+          clearInterval(checkIfDone);
+        }
+      }, 100);
+    }
+  </script>
+
 </body>
 
-</html>
-</body>
 </html>

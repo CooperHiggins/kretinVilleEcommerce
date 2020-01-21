@@ -142,9 +142,8 @@ class UI {
       if (event.target.classList.contains('remove-item')) {
         let removeItem = event.target;
         let id = removeItem.dataset.id;
-        cartContent.removeChild(cartContent.children[0]);
-        // removeChild(cartContent.children[0]);
         // cartContent.removeChild(cartContent.children[0]);
+        cartContent.removeChild(removeItem.parentElement.parentElement);
         // remove item
         this.removeItem(id);
       } else if (event.target.classList.contains('fa-chevron-up')) {
@@ -175,7 +174,6 @@ class UI {
     // console.log(this);
     let cartItems = cart.map(item => item.id);
     cartItems.forEach(id => this.removeItem(id));
-    // console.log(cartContent.children);
     while (cartContent.children.length > 0) {
       cartContent.removeChild(cartContent.children[0]);
     }

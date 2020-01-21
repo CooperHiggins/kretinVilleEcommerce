@@ -27,9 +27,9 @@ module.exports = class StripeController {
         billing_address_collection:"required",
         line_items,
         //success_url: fullUrl + 'ht/success',
-        success_url: 'https://facebook.com',
+        success_url: 'https://kretinville.com',
         //cancel_url: fullUrl + '/cancel'
-        cancel_url: 'https://facebook.com'
+        cancel_url: 'https://kretinville.com'
       });
       res.json({ session });
     } catch (err) {

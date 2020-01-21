@@ -12,7 +12,7 @@
       "sys": { "id": "2" },
       "fields": {
         "title": "black sb",
-        "price": 40.00,
+        "price": 39.99,
         "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
       }
     },
@@ -20,7 +20,7 @@
       "sys": { "id": "3" },
       "fields": {
         "title": "blue sb",
-        "price": 40.00,
+        "price": 39.99,
         "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
       }
     },
@@ -28,7 +28,7 @@
       "sys": { "id": "4" },
       "fields": {
         "title": "wood sb",
-        "price": 40.00,
+        "price": 39.99,
         "image": { "fields": { "file": { "url": "../../images/cheap-skateboards.png" } } }
       }
     },
@@ -36,7 +36,7 @@
       "sys": { "id": "5" },
       "fields": {
         "title": "CoopDoerLTD Kruiser Complete sb",
-        "price": 99.99,
+        "price": 39.99,
         "image": { "fields": { "file": { "url": "../images/cheap-skateboards.png" } } }
       }
     }
