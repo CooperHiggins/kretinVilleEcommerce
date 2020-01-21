@@ -1,3 +1,9 @@
+const client = contentful.createClient({
+  // This is the space ID. A space is like a project folder in Contentful terms
+  space: "x2kh2pfmdwmn",
+  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+  accessToken: "fqLGxIgDojK9HVDW0EV0TTgM0Bscx_qGgmc9IlCMgos"
+});
 // variables
 const postsDOM = document.querySelector('.posts-center');
 
@@ -5,9 +11,16 @@ const postsDOM = document.querySelector('.posts-center');
 class Posts {
   async getPosts() {
     try {
-      let result = await fetch('../js/json/posts.json');
-      let data = await result.json();
-      let posts = data.items;
+      
+      let contentful = await client.getEntries({
+        content_type: "kretinVilleBlogPost"
+      })
+      // console.log(contentful)
+      // let result = await fetch('../js/json/posts.json');
+      // let data = await result.json();
+      // let posts = data.items;
+
+      let posts = contentful.items;
       posts = posts.map(item => {
         const { title, p } = item.fields;
         const { id } = item.sys;
