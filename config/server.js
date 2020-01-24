@@ -46,15 +46,15 @@ module.exports = class ExpressServer {
     });
     // eslint-disable-next-line no-unused-vars, no-shadow
     // 500 error handlers
-    app.use((err, req, res, next) => {
-      if (process.env.NODE_ENV !== 'productions') {
-        console.log(err.message);
-      }
-      res.status(err.status || 500);
-      res.json({ message: err.message });
-    });
-    return this;
-  }
+  //   app.use((err, req, res, next) => {
+  //     if (process.env.NODE_ENV !== 'productions') {
+  //       console.log(err.message);
+  //     }
+  //     res.status(err.status || 500);
+  //     res.json({ message: err.message });
+  //   });
+  //   return this;
+  // }
 
   listen(port) {
     const welcome = port => () =>
