@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+=======
+.env
+node_modules
+.env
+node_modules
+*.log
+>>>>>>> 5cde100ade9e45b4b3a813967fcbb71395301f37
