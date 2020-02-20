@@ -16,6 +16,7 @@ const cartTotal = document.querySelector('.cart-total');
 const cartContent = document.querySelector('.cart-content');
 const productsDOM = document.querySelector('.products-center');
 const cartTotalValue = document.querySelector('.cart-total-value');
+const sizeBtn = document.querySelector('.btn-size')
 
 //cart
 let cart = [];
@@ -63,6 +64,11 @@ class UI {
         </div>
         <h3>${product.title}</h3>
         <h4>$${product.price}</h4>
+        <button class="btn-size" onclick="classList.toggle('active')">7.75</button>
+        <button class="btn-size" onclick="classList.toggle('active')">8.25</button>
+        <button class="btn-size" onclick="classList.toggle('active')">8.5</button>
+        <button class="btn-size" onclick="classList.toggle('active')">9</button>
+        
     </article>
       `;
     });
@@ -113,8 +119,9 @@ class UI {
     div.innerHTML = `<div class="cart-item">
     <img src=${item.image} alt="cart-image">
     <div>
-        <h4>${item.title}</h4>
-        <h5>$${item.price}</h5>
+        <h3>${item.title}</h3>
+        <h4>$${item.price}</h4>
+        <h5>${sizeBtn}<h5>
         <span class="remove-item" data-id=${item.id}>remove</span>
     </div>
     <div>
@@ -215,7 +222,7 @@ class UI {
       });
   }
   stripe(sessionId) {
-    var stripe = Stripe('pk_test_aoH94nr3uihcLLqiRyJmKbtH00xHTMWd2F');
+    var stripe = Stripe('pk_live_08nfNJQ7HfTIOoCYbHcEk0Ay00Tzs0JfVmF');
     (async () => {
       const { error } = await stripe.redirectToCheckout({
         // Make the id field from the Checkout Session creation API response

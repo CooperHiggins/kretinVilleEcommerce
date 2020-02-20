@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Jolly+Lodger&display=swap');
 
 @font-face {
-  font-family: 'Ghastly Panic' cursive;
-  src: url(ghastly-panic.ttf);
+  font-family: 'Ghastly Panic';
+  src: url('../css/ghastly-panic.ttf');
 }
 :root {
   --primaryColor: #b90600;
@@ -32,6 +32,9 @@ p.logo {
   font-size: 5em;
   text-decoration: underline;
   text-decoration-color: black;
+}
+.p-1 {
+  padding: 1em;
 }
 /* --------------- Navbar ---------------- */
 span.nav-icon {

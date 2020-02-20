@@ -34,6 +34,10 @@ class Posts {
   }
 }
 
+//get posts 
+// use node.js to create new .html file with post title name item.title
+// append posts to new file in
+
 //display blog posts
 class UI {
   displayPosts(posts) {

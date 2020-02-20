@@ -1,0 +1,685 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KretinVille Blog</title>
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="../index.html">
+            <!-- <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.png" /> -->
+            <p class="logo">KretinVille</p>
+        </a>
+        <div class="">
+            <a href="blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+    
+    <!-- end nav -->
+
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" class="scroll" id="posts-center"><button class="banner-btn">See Posts</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<div class="blog-posts-body">
+        
+</div>
+
+<!-- start footer  -->
+<footer class="">
+    <p class="text-center"><span class="copyright">&copy;</span> Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+<!-- contentful -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="../js/blog3.js"></script>
+
+</body>
+</html><!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KretinVille Blog</title>
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="../index.html">
+            <!-- <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.png" /> -->
+            <p class="logo">KretinVille</p>
+        </a>
+        <div class="">
+            <a href="blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+    
+    <!-- end nav -->
+
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" class="scroll" id="posts-center"><button class="banner-btn">See Posts</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<div class="blog-posts-body">
+        
+</div>
+
+<!-- start footer  -->
+<footer class="">
+    <p class="text-center"><span class="copyright">&copy;</span> Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+<!-- contentful -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="../js/blog3.js"></script>
+
+</body>
+</html><!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KretinVille Blog</title>
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="../index.html">
+            <!-- <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.png" /> -->
+            <p class="logo">KretinVille</p>
+        </a>
+        <div class="">
+            <a href="blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+    
+    <!-- end nav -->
+
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" class="scroll" id="posts-center"><button class="banner-btn">See Posts</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<div class="blog-posts-body">
+        
+</div>
+
+<!-- start footer  -->
+<footer class="">
+    <p class="text-center"><span class="copyright">&copy;</span> Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+<!-- contentful -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="../js/blog3.js"></script>
+
+</body>
+</html><!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KretinVille Blog</title>
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="../index.html">
+            <!-- <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.png" /> -->
+            <p class="logo">KretinVille</p>
+        </a>
+        <div class="">
+            <a href="blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+    
+    <!-- end nav -->
+
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" class="scroll" id="posts-center"><button class="banner-btn">See Posts</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<div class="blog-posts-body">
+        
+</div>
+
+<!-- start footer  -->
+<footer class="">
+    <p class="text-center"><span class="copyright">&copy;</span> Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+<!-- contentful -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="../js/blog3.js"></script>
+
+</body>
+</html><!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KretinVille Blog</title>
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="../index.html">
+            <!-- <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.png" /> -->
+            <p class="logo">KretinVille</p>
+        </a>
+        <div class="">
+            <a href="blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+    
+    <!-- end nav -->
+
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" class="scroll" id="posts-center"><button class="banner-btn">See Posts</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<div class="blog-posts-body">
+        
+</div>
+
+<!-- start footer  -->
+<footer class="">
+    <p class="text-center"><span class="copyright">&copy;</span> Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+<!-- contentful -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="../js/blog3.js"></script>
+
+</body>
+</html><!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KretinVille Blog</title>
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="../index.html">
+            <!-- <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.png" /> -->
+            <p class="logo">KretinVille</p>
+        </a>
+        <div class="">
+            <a href="blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+    
+    <!-- end nav -->
+
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" class="scroll" id="posts-center"><button class="banner-btn">See Posts</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<div class="blog-posts-body">
+        
+</div>
+
+<!-- start footer  -->
+<footer class="">
+    <p class="text-center"><span class="copyright">&copy;</span> Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+<!-- contentful -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="../js/blog3.js"></script>
+
+</body>
+</html><!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KretinVille Blog</title>
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="../index.html">
+            <!-- <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.png" /> -->
+            <p class="logo">KretinVille</p>
+        </a>
+        <div class="">
+            <a href="blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+    
+    <!-- end nav -->
+
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" class="scroll" id="posts-center"><button class="banner-btn">See Posts</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<div class="blog-posts-body">
+        
+</div>
+
+<!-- start footer  -->
+<footer class="">
+    <p class="text-center"><span class="copyright">&copy;</span> Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+<!-- contentful -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="../js/blog3.js"></script>
+
+</body>
+</html><!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KretinVille Blog</title>
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="../index.html">
+            <!-- <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.png" /> -->
+            <p class="logo">KretinVille</p>
+        </a>
+        <div class="">
+            <a href="blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+    
+    <!-- end nav -->
+
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" class="scroll" id="posts-center"><button class="banner-btn">See Posts</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<div class="blog-posts-body">
+        
+</div>
+
+<!-- start footer  -->
+<footer class="">
+    <p class="text-center"><span class="copyright">&copy;</span> Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+<!-- contentful -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="../js/blog3.js"></script>
+
+</body>
+</html><!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KretinVille Blog</title>
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-center">
+
+        <!-- <span onClick="dropDown()">
+            <i class="fa fa-bars"></i>
+        </span> -->
+        
+        <!-- <div class="">
+            <a href="login.html" class="login-btn">Admin Login</a>
+        </div> -->
+
+        <a href="../index.html">
+            <!-- <img class="img-fluid" id="logo" src="../images/kretinville-skateboards.png" /> -->
+            <p class="logo">KretinVille</p>
+        </a>
+        <div class="">
+            <a href="blog.html" class="login-btn">Blog</a>
+        </div>
+        <div class="">
+            <a href="skateboards-catalog.html" class="login-btn">Catalog</a>
+        </div>
+        <div class="">
+            <a href="skateboard-videos.html" class="login-btn">Videos</a>
+        </div>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                    <i class="fa fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+        </div>
+    </div>
+</nav>
+    
+    <!-- end nav -->
+
+<!-- end nav -->
+
+<!-- hero -->
+<header class="hero">
+    <div class="banner">
+            <h1 class="banner-title">KretinVille Blog Page</h1>
+            <a href="#posts-center" class="scroll" id="posts-center"><button class="banner-btn">See Posts</button></a>
+    </div>
+</header>
+<!-- hero -->
+
+<div class="blog-posts-body">
+        
+</div>
+
+<!-- start footer  -->
+<footer class="">
+    <p class="text-center"><span class="copyright">&copy;</span> Kretinville Skateboards</p>
+</footer>
+<!-- end footer  -->
+<!-- contentful -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="../js/blog3.js"></script>
+
+</body>
+</html>
