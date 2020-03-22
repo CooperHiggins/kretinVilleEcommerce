@@ -16,13 +16,12 @@ const jsonObj = require('../public/js/json/posts.json');
 // for(var attributename in myobject){
 //   console.log(attributename+": "+myobject[attributename]);
 // }
-
-var sys = {'key':'value', 'key2':'value2'};
-
-for(var sys in jsonObj) {
-  console.log(sys+": "+jsonObj[sys]);
+for(var id in jsonObj){
+  console.log(id+": "+jsonObj[id]);
 }
 
+const jsonString = JSON.stringify(jsonObj, null, 2);
+console.table(jsonString);
 
 const config = require('./config');
 const logger = require('./logger');
@@ -109,7 +108,8 @@ module.exports = class ExpressServer {
 // returned title of page in json object ${title}
 //'./public/html/${filename}'
 
-fs.appendFile( sys, `<!DOCTYPE html> 
+
+fs.appendFile( id, `<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
